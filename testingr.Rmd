@@ -4,6 +4,12 @@ output: pdf_document
 date: "2025-11-05"
 ---
 
+##  I REALLY HOPE THIS WORKS
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+```{r}
+library(tidyverse)
+```
+ 
