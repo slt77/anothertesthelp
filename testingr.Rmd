@@ -11,5 +11,17 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 library(tidyverse)
+library(ggplot2)
+
+view(iris)
+
+## plot Sepal.Length for setosa
+plot(density(iris$Sepal.Length[iris$Species == "setosa"]))
+
+## plot Sepal.Length for versicolor
+plot(density(iris$Sepal.Length[iris$Species == "versicolor"]))
+
+## plot Sepal.Length for virginica
+plot(density(iris$Sepal.Length[iris$Species == "virginica"]))
 ```
  
