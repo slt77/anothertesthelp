@@ -24,4 +24,31 @@ plot(density(iris$Sepal.Length[iris$Species == "versicolor"]))
 ## plot Sepal.Length for virginica
 plot(density(iris$Sepal.Length[iris$Species == "virginica"]))
 ```
+
+
+
+*italics*
+**bold**
+
+```{r, echo=F}
+summary(cars)
+#hides the source code but includes outputs
+```
+
+```{r, fig.height=3, fig.align='center'}
+# produce scatterplot
+plot(iris$Sepal.Length, iris$Sepal.Width, 
+     xlab = "Sepal Length (cm)", ylab = "Sepal Width (cm)")
+points(iris$Sepal.Length[iris$Species == "versicolor"],
+       iris$Sepal.Width[iris$Species == "versicolor"], col = "red")
+points(iris$Sepal.Length[iris$Species == "virginica"],
+       iris$Sepal.Width[iris$Species == "virginica"], col = "blue")
+
+## add legend
+legend(par("usr")[2] * 0.8, par("usr")[4] * 0.98, 
+       legend = c("setosa", "versicolor", "virginica"), 
+       pch = c(1, 1, 1), 
+       col = c("black", "red", "blue"))
+```
+
  
